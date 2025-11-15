@@ -1,0 +1,85 @@
+/* =====global conf====== */
+:root {
+  --b1: #0f172a;
+  --b2: #1e293b;
+  --b3: #334155;
+  --text-soft: #cbd5e1;
+  --accent: #afcef5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-image: url("../img/blurry-gradient-haikei.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: linear-gradient(var(--accent), var(--b1));
+  color: var(--text-soft);
+  min-height: 100vh;
+  padding: 0%;
+}
+
+.badge {
+  background-color: var(--accent) !important;
+  color: var(--b3) !important;
+}
+p {
+  color: var(--text-soft);
+}
+h2,
+h5 {
+  color: var(--b3);
+}
+.projects h5 {
+  color: var(--text-soft);
+}
+
+.icon {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  opacity: 0.9;
+}
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.inner {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.5s;
+
+  min-height: 200px;
+  min-width: 250px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.6s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+footer {
+  background-color: var(--b1);
+}
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
