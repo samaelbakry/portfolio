@@ -1,52 +1,56 @@
 /* =====global conf====== */
 :root {
+
   --b1: #0f172a;
   --b2: #1e293b;
   --b3: #334155;
   --text-soft: #cbd5e1;
   --accent: #afcef5;
+
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  /* background-image: url("../img/blurry-gradient-haikei.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background: linear-gradient(var(--accent), var(--b1));
+  background: radial-gradient(var(--b3),var(--b2),var(--b3),var(--b2));
   color: var(--text-soft);
   min-height: 100vh;
   padding: 0%;
 }
-
 .badge {
   background-color: var(--accent) !important;
-  color: var(--b3) !important;
+  color: var(--b1) !important;
 }
 p {
   color: var(--text-soft);
 }
 h2,
-h5 {
-  color: var(--b3);
+h5
+{
+  color:var(--text-soft)
+}
+h3{
+  color: var(--text-soft);
 }
 .projects h5 {
   color: var(--text-soft);
+}
+.navigate{
+   background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .icon {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  width: 100px;
-  height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
-  opacity: 0.9;
+  opacity: 0.3;
 }
 .icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
   opacity: 1;
 }
 .inner {
@@ -55,9 +59,9 @@ h5 {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.5s;
-
-  min-height: 200px;
-  min-width: 250px;
+  height: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .hidden {
@@ -71,7 +75,7 @@ h5 {
   transform: translateY(0);
 }
 footer {
-  background-color: var(--b1);
+  background-color: var(--b3);
 }
 .form-control:focus {
   background: rgba(255, 255, 255, 0.12);
@@ -82,4 +86,3 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
-

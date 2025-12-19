@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awseome cdn-->
+    <!-- font awesome cdn-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <!-- primary font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,33 +21,37 @@
 </head>
 
 <body>
-
+    <!-- HERO -->
     <section class="home py-5">
-        <div class="container py-5  my-3">
+        <div class="container py-5 my-3">
             <div class="wrapper d-flex align-items-center flex-column">
-                <img src="./img/423248521_1609419729865315_3886704480824806694_n.jpg" alt="perdonal-img" width="100px"
+                <img src="./img/423248521_1609419729865315_3886704480824806694_n.jpg" alt="personal-img" width="100px"
                     class="rounded-circle">
                 <h1 class="display-4 fw-bold text-light m-0">Hello I’m Sama Elbakry</h1>
                 <h2 class="display-4 fw-bold">Frontend Developer</h2>
-                <h3 class="h6 text-muted text-center">I’m a passionate front-end developer focused on building modern,
+                <h3 class="h6 text-center">I’m a passionate front-end developer focused on building modern,
                     responsive, and user-friendly web applications <br>
                     Constantly improving my skills, learning new tools, and challenging myself with logic and UI/UX
                     ideas to create better experiences
                 </h3>
             </div>
             <div class="icon-wrapper d-flex justify-content-center align-items-center gap-3 mt-3">
-                <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                    <i class="fa-brands fa-github fs-3"><a href=""></a></i>
-                </div>
-                <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                    <i class="fa-brands fa-linkedin-in fs-3"><a href=""></a></i>
-                </div>
+                <a href="https://github.com/samaelbakry" target="_blank" class="icon d-inline-block p-2 rounded-pill">
+                    <i class="fa-brands fa-github fs-3 text-white"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sama-ibrahim-elbakry-b76b05371/" target="_blank"
+                    class="icon d-inline-block p-2 rounded-pill">
+                    <i class="fa-brands fa-linkedin-in fs-3 text-white"></i>
+                </a>
             </div>
         </div>
     </section>
-
-    <section class="hidden">
-        <div class="container py-3">
+    <!-- ABOUT -->
+    <section class="hidden ">
+        <span class=" d-inline navigate p-2 rounded-1 position-fixed end-0 top-50 z-2 text-center hidden shadow">
+            <i class="fa-solid fa-award fs-5"></i>
+        </span>
+        <div class="container py-3 text-capitalize">
             <h4 class="display-5 fw-bold text-center m-3 hidden">About</h4>
             <div class="row g-4">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-6 hidden">
@@ -60,17 +64,56 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-6 hidden">
                     <div class="inner rounded-4 shadow p-3">
                         <span class="badge text-bg-primary m-1 px-lg-4 fs-5">Resume</span>
-                        <h5 class=" mt-lg-2">downaload resume as PDF</h5>
-                        <button class="btn btn-secondary"> Download<i class="fa-solid fa-download"></i></button>
+                        <h5 class=" mt-lg-2">download resume</h5>
+                        <a href="./img/Samaa Bakry Resume (1).png" download="Samaa Bakry Resume (1).png">
+                            <button class="btn btn-secondary">
+                                Download<i class="fa-solid fa-download"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-6 hidden">
                     <div class="inner rounded-4 shadow p-3">
                         <span class="badge text-bg-primary m-1 px-lg-4 fs-5">skills</span>
                         <h5 class="fw-bold mt-lg-2">front-end skills</h5>
-                        <p>HTML5 - CSS3 - (Flexbox, Grid) -JavaScript (ES6+) <br> Frameworks & Libraries : React.js -
-                            Tailwind CSS - Bootstrap <br> UI basics & attention to details , Clean & maintainable code
-                        </p>
+                        <div class="d-flex justify-content-around align-items-center flex-wrap">
+                            <ul class="list-unstyled">
+                                <li>
+                                    - HTML5, CSS3, JavaScript (ES6+)
+                                </li>
+                                <li>
+                                    - Tailwind CSS, Bootstrap
+                                </li>
+                                <li>
+                                    - React.js, React Router
+                                </li>
+
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    -Framer Motion (animations)
+                                </li>
+                                <li>
+                                    -Formik / React Hook Form
+                                </li>
+                                <li>
+                                    - Git, GitHub, Vite
+                                </li>
+
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    - Axios, REST APIs
+                                </li>
+                                <li>
+                                    -API integration
+                                </li>
+                                <li>
+                                    -Handling errors
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-6 hidden">
@@ -85,112 +128,71 @@
         </div>
 
     </section>
-
+    <!-- PROJECTS -->
     <section class="hidden py-3 projects">
+        <span class=" d-inline navigate p-2 rounded-1 position-fixed end-0 top-50 z-2 text-center hidden shadow m-1">
+            <i class="fa-solid fa-code fs-5"></i>
+        </span>
         <h4 class="display-5 fw-bold text-center m-3 hidden">Projects I Have Done</h4>
         <div class="container py-5">
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 hidden">
-                    <div class="in">
-                        <img src="./img/DevFolio.Bootstrap - Google Chrome 11_14_2025 2_02_28 PM.png"
-                            class="w-100 rounded-3" alt="pro-1">
-                        <h5 class="text-center m-2">Devfolio portfolio</h5>
-                        <div class="wp d-flex gap-2">
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>HTML</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>CSS</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Bootstrap</span>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 hidden">
-                    <div class="in">
+                    <div class="inner rounded-2 p-2">
                         <img src="./img/Are you ready _ - Google Chrome 11_14_2025 2_21_35 PM.png"
                             class="w-100 rounded-3" alt="pro-1">
-                        <h5 class="text-center m-2">Games website (OOP)</h5>
-                        <div class="wp d-flex gap-2">
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>HTML</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Javascript</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Bootstrap</span>
-                            </div>
+                        <div class="wp d-flex gap-2 align-items-center justify-content-between">
+                            <a href="https://github.com/samaelbakry/OOP" class="icon rounded-pill m-2" target="_blank">
+                                <i class="fa-brands fa-github fs-4 text-white m-2"></i>
+                            </a>
+                            <a href="https://samaelbakry.github.io/OOP/" class="icon rounded-pill m-2" target="_blank">
+                                <i class="fa-solid fa-play fs-4 text-white m-2"></i>
+                            </a>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 hidden">
-                    <div class="in">
-                        <img src="./img/perfume - Google Chrome 11_14_2025 2_30_22 PM.png" class="w-100 rounded-3"
-                            alt="pro-1">
-                        <h5 class="text-center m-2">perfumes store (CRUD)</h5>
-                        <div class="wp d-flex gap-2">
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>HTML</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Javascript</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Bootstrap</span>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 hidden">
-                    <div class="in">
-                        <img src="./img/Weather - Google Chrome 11_14_2025 2_36_17 PM.png" class="w-100 rounded-3"
-                            alt="pro-1">
-                        <h5 class="text-center m-2">Weather forecast(API/fetch)</h5>
-                        <div class="wp d-flex gap-2">
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>HTML</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Javascript</span>
-                            </div>
-                            <div class="icon rounded-pill d-flex justify-content-center align-items-center">
-                                <span>Bootstrap</span>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
+    <!-- CONTACT  -->
     <section class="py-5 hidden">
+        <span class=" d-inline navigate p-2 rounded-1 position-fixed end-0 top-50 z-2 text-center hidden shadow m-1">
+            <i class="fa-regular fa-address-card fs-5"></i>
+        </span>
         <h4 class="display-5 fw-bold text-center m-3 ">contact</h4>
         <form action="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-6">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6">
                         <div class="inner rounded-3 py-4">
                             <h5 class="h2 fw-bold text-capitalize p-3">get ready to create great </h5>
                             <hr>
-                            <ul class="text-lg leading-relaxed list-unstyled m-3">
-                                <li class="p-1"><i class="fa-regular fa-envelope fs-5 mx-2"></i>samaabakry68@gmail.com
+                            <ul class="text-lg list-unstyled m-3 d-flex gap-2">
+                                <li>
+                                    <a href="https://github.com/samaelbakry" target="_blank"
+                                        class="icon d-inline-block p-2 rounded-pill">
+                                        <i class="fa-brands fa-github fs-3 text-white"></i>
+                                    </a>
                                 </li>
-                                <li class="p-1"> <i
-                                        class="fa-brands fa-linkedin-in fs-5 mx-2"></i>https://linkedin/in/sama-ibrahim-elbakry/
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sama-ibrahim-elbakry-b76b05371/"
+                                        target="_blank" class="icon d-inline-block p-2 rounded-pill">
+                                        <i class="fa-brands fa-linkedin-in fs-3 text-white"></i>
+                                    </a>
                                 </li>
-                                <li class="p-1"><i class="fa-brands fa-github fs-5 mx-2"></i>
-                                    https://github.com/samaelbakry</li>
+                                <li>
+                                     <a href="mailto:samaabakry68@gmail.com"
+                                        target="_blank" class="icon d-inline-block p-2 rounded-pill">
+                                        <i class="fa-regular fa-envelope fs-3 text-white"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-6">
+                    <div class="col-md-6">
                         <div class="inner rounded-3 px-4 py-5">
                             <div class="row">
                                 <div class="col-6">
@@ -212,20 +214,22 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </form>
 
     </section>
-
+    <!-- FOOTER -->
     <footer>
-        <h6 class="m-0 text-capitalize text-center py-4 h4 fw-light">all copy rights reserved</h6>
+        <h6 class="m-0 text-capitalize text-center py-4 h4 fw-bold">all copy rights reserved</h6>
     </footer>
 
 
 
+
+
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
